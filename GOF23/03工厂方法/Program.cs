@@ -8,7 +8,7 @@ namespace GOF23._03工厂方法
     {
         public override void Open()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); 
         }
     }
 }

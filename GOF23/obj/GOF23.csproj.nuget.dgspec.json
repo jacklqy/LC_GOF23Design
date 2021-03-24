@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BaiduNetdiskDownload\\GOF23Design\\GOF23\\GOF23.csproj": {}
+    "D:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj": {}
   },
   "projects": {
-    "D:\\BaiduNetdiskDownload\\GOF23Design\\GOF23\\GOF23.csproj": {
+    "D:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BaiduNetdiskDownload\\GOF23Design\\GOF23\\GOF23.csproj",
+        "projectUniqueName": "D:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj",
         "projectName": "GOF23",
-        "projectPath": "D:\\BaiduNetdiskDownload\\GOF23Design\\GOF23\\GOF23.csproj",
+        "projectPath": "D:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj",
         "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-        "outputPath": "D:\\BaiduNetdiskDownload\\GOF23Design\\GOF23\\obj\\",
+        "outputPath": "D:\\github\\LC_GOF23Design\\GOF23\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
