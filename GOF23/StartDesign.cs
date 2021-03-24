@@ -9,8 +9,8 @@ namespace GOF23
         public void Go()
         {
             #region 单列模式
-            //OpentDesign design = new 单列模式.Program();
-            //design.Open();
+            OpentDesign design = new GOF23._01单列模式.Program();
+            design.Open();
             #endregion
 
             //#region 简单工厂
@@ -18,10 +18,10 @@ namespace GOF23
             //design.Open();
             //#endregion
 
-            #region 简单工厂
-            OpentDesign design = new GOF23._03工厂方法.Program();
-            design.Open();
-            #endregion
+            //#region 简单工厂
+            //OpentDesign design = new GOF23._03工厂方法.Program();
+            //design.Open();
+            //#endregion
         }
 
     }

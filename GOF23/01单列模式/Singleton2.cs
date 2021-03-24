@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GOF23.单列模式
+namespace GOF23._01单列模式
 {
     /// <summary>
     /// 饿汉式

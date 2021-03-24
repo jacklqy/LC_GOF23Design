@@ -19,7 +19,7 @@ namespace GOF23._03工厂方法.Service
         }
         public void ShowKing()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("This {0}", this.GetType().Name);
         }
     }
 }

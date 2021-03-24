@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GOF23.单列模式
+namespace GOF23._01单列模式
 {
     public class Program : OpentDesign
     {
