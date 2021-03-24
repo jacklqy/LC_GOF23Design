@@ -8,7 +8,7 @@ namespace GOF23._04抽象工厂
     {
         public override void Open()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("抽象工厂");
         }
     }
 }
