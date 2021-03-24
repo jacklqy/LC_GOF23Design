@@ -13,12 +13,15 @@ namespace GOF23
             //design.Open();
             #endregion
 
+            //#region 简单工厂
+            //OpentDesign design = new GOF23._02简单工厂.Program();
+            //design.Open();
+            //#endregion
+
             #region 简单工厂
-            OpentDesign design = new GOF23._02简单工厂.Program();
+            OpentDesign design = new GOF23._03工厂方法.Program();
             design.Open();
             #endregion
-
-
         }
 
     }
