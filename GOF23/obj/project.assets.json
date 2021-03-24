@@ -8709,19 +8709,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BRH201\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator.CQLZD-2021OAHFP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj",
+      "projectUniqueName": "G:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj",
       "projectName": "GOF23",
-      "projectPath": "D:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj",
-      "packagesPath": "C:\\Users\\BRH201\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\LC_GOF23Design\\GOF23\\obj\\",
+      "projectPath": "G:\\github\\LC_GOF23Design\\GOF23\\GOF23.csproj",
+      "packagesPath": "C:\\Users\\Administrator.CQLZD-2021OAHFP\\.nuget\\packages\\",
+      "outputPath": "G:\\github\\LC_GOF23Design\\GOF23\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BRH201\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator.CQLZD-2021OAHFP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8775,7 +8775,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
