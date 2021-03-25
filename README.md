@@ -5,7 +5,7 @@
 ![image](https://user-images.githubusercontent.com/26539681/112274008-f491d080-8cb8-11eb-91a8-6eebd104ca96.png)
 ![image](https://user-images.githubusercontent.com/26539681/112274051-ffe4fc00-8cb8-11eb-86cf-174847d99931.png)
 
-23中设计模式说明：
+23中设计模式说明：https://www.runoob.com/design-pattern/design-pattern-tutorial.html
 单例（Singleton)保证一个类仅有一个实例，并提供一个访问它的全局访问点。
 	主要解决：一个全局使用的类频繁地创建与销毁。
 	何时使用：当您想控制实例数目，节省系统资源的时候。
