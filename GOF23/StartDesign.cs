@@ -18,7 +18,7 @@ namespace GOF23
             //design.Open();
             #endregion
 
-            #region 简单工厂
+            #region 工厂方法
             //OpentDesign design = new GOF23._03工厂方法.Program();
             //design.Open();
             #endregion
