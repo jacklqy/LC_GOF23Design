@@ -25,7 +25,7 @@ namespace GOF23._01单列模式
 
         public void Show()
         {
-            Console.WriteLine("Singleton.Show被调用啦...");
+            Console.WriteLine("Singleton3.Show被调用啦...");
         }
     }
 }
