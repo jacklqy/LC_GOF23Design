@@ -6,7 +6,7 @@ using System.Text;
 using static GOF23._02简单工厂.ObjectFactory;
 
 /// <summary>
-/// Simple Factory，是由一个工厂对象决定创建出哪一种产品类的实例，是工厂模式家族中最简单实用的模式。
+/// Simple Factory，是由一个工厂对象决定创建出哪一种产品类的实例，是工厂模式家族中最简单实用的模式。(此设计模式没有被纳入23种涉及模式)
 /// </summary>
 namespace GOF23._02简单工厂
 {
