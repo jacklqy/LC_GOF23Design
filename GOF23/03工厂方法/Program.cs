@@ -4,6 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+/// <summary>
+/// Factory Method，定义一个用于创建对象的接口，让子类决定实例化哪一个类，工厂方法使一个类的实例化延迟到其子类。
+/// 为了遵循扩展开放，修改关闭原则，将简单工厂类转换为工厂方法接口，将其Switch分支分离成子类去继承工厂方法接口类，顺利的将创建对象的过程延迟到子类。
+/// </summary>
 namespace GOF23._03工厂方法
 {
     /// <summary>

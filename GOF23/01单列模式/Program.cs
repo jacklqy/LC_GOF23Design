@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// 保证一个类仅有一个实例，并提供一个访问它的全局访问点
+/// </summary>
 namespace GOF23._01单列模式
 {
     public class Program : OpentDesign
