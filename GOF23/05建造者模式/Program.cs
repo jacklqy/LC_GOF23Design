@@ -38,6 +38,7 @@ namespace GOF23._05建造者模式
                 AbstractBuilder builderFord = new BuilderFord();
                 Director director = new Director(builderFord);
                 Car car = director.GetCar();
+                Console.WriteLine("{0}--被造好啦~~~", car.Name);
             }
             Console.WriteLine("**********************************");
             {
@@ -45,6 +46,7 @@ namespace GOF23._05建造者模式
                 AbstractBuilder builderBYD = new BuilderBYD();
                 Director director = new Director(builderBYD);
                 Car car = director.GetCar();
+                Console.WriteLine("{0}--被造好啦~~~", car.Name);
             }
         }
     }

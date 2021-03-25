@@ -51,7 +51,7 @@ namespace GOF23._05建造者模式
             Console.WriteLine("{0}：build Car", this.GetType().Name);
             return new Car(this._Engine, this._Wheels, this._Light)
             {
-                Name = "福特汽车[福克斯]"
+                Name = "福特[蒙迪欧]"
             };
         }
     }
