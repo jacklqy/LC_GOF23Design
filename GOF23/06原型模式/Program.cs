@@ -56,22 +56,43 @@ namespace GOF23._06原型模式
                     //    student.Study();
                     //}
                 }
+
+                //{
+                //    Console.WriteLine("*********************单例模式******************");
+                //    for (int i = 0; i < 5; i++)
+                //    {
+                //        StudentSingleton studentSingleton1 = StudentSingleton.GetInstance();
+                //        StudentSingleton studentSingleton2 = StudentSingleton.GetInstance();
+
+                //        studentSingleton1.Id = 234;
+                //        studentSingleton1.Name = "修改名称1";
+
+                //        studentSingleton2.Id = 345;
+                //        studentSingleton2.Name = "修改名称2";
+
+                //        studentSingleton1.Study();
+                //        studentSingleton2.Study();
+                //        //单列---整个进程只有一个实例--能出现两个学生吗？不可能！---后面会覆盖前面的
+                //    }
+                //}
+
                 {
-                    Console.WriteLine("*********************单例模式******************");
+                    //单列可以对象复用----但是会出现覆盖
+                    //能不能不覆盖，但是性能也搞？
+                    Console.WriteLine("*********************原型模式******************");
                     for (int i = 0; i < 5; i++)
                     {
-                        StudentSingleton studentSingleton1 = StudentSingleton.GetInstance();
-                        StudentSingleton studentSingleton2 = StudentSingleton.GetInstance();
+                        StudentPrototype studentPrototype1 = StudentPrototype.GetInstance();
+                        StudentPrototype studentPrototype2 = StudentPrototype.GetInstance();
 
-                        studentSingleton1.Id = 234;
-                        studentSingleton1.Name = "修改名称1";
+                        studentPrototype1.Id = 234;
+                        studentPrototype1.Name = "修改名称1";
 
-                        studentSingleton2.Id = 345;
-                        studentSingleton2.Name = "修改名称2";
+                        studentPrototype2.Id = 345;
+                        studentPrototype2.Name = "修改名称2";
 
-                        studentSingleton1.Study();
-                        studentSingleton2.Study();
-                        //单列---整个进程只有一个实例--能出现两个学生吗？不可能！
+                        studentPrototype1.Study();
+                        studentPrototype2.Study();
                     }
                 }
             }
