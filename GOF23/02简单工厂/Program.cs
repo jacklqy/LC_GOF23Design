@@ -18,6 +18,8 @@ namespace GOF23._02简单工厂
     {
         public override void Open()
         {
+            Console.WriteLine("****************简单工厂******************");
+
             Player player = new Player();
 
             //1、根据枚举值创建对象

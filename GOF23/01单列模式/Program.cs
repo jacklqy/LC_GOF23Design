@@ -24,6 +24,8 @@ namespace GOF23._01单列模式
     {
         public override void Open()
         {
+            Console.WriteLine("****************单例模式******************");
+
             //for (int i = 0; i < 5; i++)
             //{
             //    Task.Run(() =>
