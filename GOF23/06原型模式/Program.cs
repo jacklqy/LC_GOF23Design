@@ -78,28 +78,59 @@ namespace GOF23._06原型模式
 
                 {
                     //单列可以对象复用----但是会出现覆盖
-                    //能不能不覆盖，但是性能也搞？
+                    //能不能不覆盖，但是性能也高？
                     Console.WriteLine("*********************原型模式******************");
-                    for (int i = 0; i < 5; i++)
+                    StudentPrototype studentPrototype1 = StudentPrototype.GetInstance();
+                    StudentPrototype studentPrototype2 = StudentPrototype.GetInstance();
+                    StudentPrototype studentPrototype3 = StudentPrototype.GetInstance();
+
+                    studentPrototype1.Id = 111;
+                    studentPrototype1.Name = "修改名称111";
+                    studentPrototype1.book.BookId = 111;
+                    studentPrototype1.book.BookName = "book111";
+
+                    studentPrototype2.Id = 222;
+                    studentPrototype2.Name = "修改名称222";
+                    studentPrototype2.book.BookId = 222;
+                    studentPrototype2.book.BookName = "book222";
+
+                    studentPrototype3.Id = 333;
+                    studentPrototype3.Name = "修改名称333";
+                    studentPrototype3.book = new Book()
                     {
-                        StudentPrototype studentPrototype1 = StudentPrototype.GetInstance();
-                        StudentPrototype studentPrototype2 = StudentPrototype.GetInstance();
+                        BookId = 333,
+                        BookName = "book333"
+                    };
 
-                        studentPrototype1.Id = 234;
-                        studentPrototype1.Name = "修改名称1";
+                    studentPrototype1.Study();
+                    studentPrototype2.Study();
+                    studentPrototype3.Study();
 
-                        studentPrototype2.Id = 345;
-                        studentPrototype2.Name = "修改名称2";
+                    ///输出结果BookId 222/222/333  C#内存分配
+                    ///StudentPrototype.Study被调用啦.Id = 111 Name = 修改名称111 BookId = 222 BookName = book222
+                    ///StudentPrototype.Study被调用啦.Id = 222 Name = 修改名称222 BookId = 222 BookName = book222
+                    ///StudentPrototype.Study被调用啦.Id = 333 Name = 修改名称333 BookId = 333 BookName = book333
 
-                        studentPrototype1.Study();
-                        studentPrototype2.Study();
-                    }
+                    ///Name 因为string类型的 ="codeman" 等同于new string("codeman")，开辟新空间，不影响之前的值---实际上string是不可修改的---（因为string不可修改才可以享元模式）
+
+                }
+
+                {
+                    ///C#内存分配 进程堆(进程唯一) 线程栈(每个线程一个)
+                    ///引用类型在堆里，值类型在栈里---变量都在栈里
+                    ///引用类型对象里面的值类型----studentPrototype1.Id是存储在堆还是栈？在堆里
+                    ///值类型里面的引用类型----Customer.Name是存储在堆还是栈？在堆里(任何引用类型的值都在堆里)
                 }
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public struct Customer
+        {
+            public string Name;
         }
     }
 }
