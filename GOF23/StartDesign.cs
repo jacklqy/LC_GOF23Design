@@ -29,7 +29,12 @@ namespace GOF23
             #endregion
 
             #region 建造者模式
-            OpentDesign design = new GOF23._05建造者模式.Program();
+            //OpentDesign design = new GOF23._05建造者模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 建造者模式
+            OpentDesign design = new GOF23._06原型模式.Program();
             design.Open();
             #endregion
         }

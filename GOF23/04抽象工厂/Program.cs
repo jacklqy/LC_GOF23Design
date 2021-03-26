@@ -23,8 +23,8 @@ namespace GOF23._04抽象工厂
     {
         public override void Open()
         {
-            Console.WriteLine("抽象工厂");
-            Console.WriteLine("****************************************");
+            Console.WriteLine("****************抽象工厂******************");
+
             {
                 AbstractFactory factoryShu = new FactoryShu();
                 IGroup group = factoryShu.CreateGroup();

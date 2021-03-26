@@ -26,6 +26,8 @@ namespace GOF23._03工厂方法
     {
         public override void Open()
         {
+            Console.WriteLine("****************工厂方法******************");
+
             {
                 IFactory humanFactory = new HumanFactory();
                 IRace iRaceHuman = humanFactory.CreateInstance();

@@ -43,6 +43,8 @@ namespace GOF23._05建造者模式
             //    builderBYD.Car();
             //}
 
+            Console.WriteLine("****************建造者模式******************");
+
             {
                 //福特汽车建造
                 AbstractBuilder builderFord = new BuilderFord();
