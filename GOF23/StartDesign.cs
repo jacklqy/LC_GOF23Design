@@ -8,6 +8,9 @@ namespace GOF23
     {
         public void Go()
         {
+
+            #region 创建型设计模式
+
             #region 单列模式
             //OpentDesign design = new GOF23._01单列模式.Program();
             //design.Open();
@@ -34,9 +37,21 @@ namespace GOF23
             #endregion
 
             #region 建造者模式
-            OpentDesign design = new GOF23._06原型模式.Program();
-            design.Open();
+            //OpentDesign design = new GOF23._06原型模式.Program();
+            //design.Open();
             #endregion
+
+            #endregion
+
+            #region 结构型设计模式
+
+            #region 建造者模式
+            OpentDesign design = new GOF23._07适配器模式.Program();
+            design.Open();
+            #endregion  
+
+            #endregion
+
         }
 
     }
