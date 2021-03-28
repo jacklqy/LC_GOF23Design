@@ -49,7 +49,12 @@ namespace GOF23
             ///组合优于继承
 
             #region 建造者模式
-            OpentDesign design = new GOF23._07适配器模式.Program();
+            //OpentDesign design = new GOF23._07适配器模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 桥接模式
+            OpentDesign design = new GOF23._08桥接模式.Program();
             design.Open();
             #endregion  
 
