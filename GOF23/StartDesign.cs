@@ -64,9 +64,18 @@ namespace GOF23
             #endregion
 
             #region 装饰器模式
-            OpentDesign design = new GOF23._10装饰器模式.Program();
+            //OpentDesign design = new GOF23._10装饰器模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 外观模式
+            OpentDesign design = new GOF23._11外观模式.Program();
             design.Open();
             #endregion
+
+            #endregion
+
+            #region 行为型设计模式(关注对象与行为的分离)
 
             #endregion
 
