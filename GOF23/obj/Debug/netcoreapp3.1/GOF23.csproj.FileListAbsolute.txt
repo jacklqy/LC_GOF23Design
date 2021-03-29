@@ -388,7 +388,6 @@ G:\github\LC_GOF23Design\GOF23\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstand
 G:\github\LC_GOF23Design\GOF23\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 G:\github\LC_GOF23Design\GOF23\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 G:\github\LC_GOF23Design\GOF23\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.csprojAssemblyReference.cache
 G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.AssemblyInfoInputs.cache
 G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.AssemblyInfo.cs
 G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.csproj.CoreCompileInputs.cache
@@ -397,3 +396,4 @@ G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.dll
 G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.pdb
 G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.genruntimeconfig.cache
 D:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.csprojAssemblyReference.cache
+G:\github\LC_GOF23Design\GOF23\obj\Debug\netcoreapp3.1\GOF23.csprojAssemblyReference.cache
