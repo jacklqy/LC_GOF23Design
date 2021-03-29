@@ -59,7 +59,12 @@ namespace GOF23
             #endregion
 
             #region 组合模式
-            OpentDesign design = new GOF23._09组合模式.Program();
+            //OpentDesign design = new GOF23._09组合模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 装饰器模式
+            OpentDesign design = new GOF23._10装饰器模式.Program();
             design.Open();
             #endregion
 
