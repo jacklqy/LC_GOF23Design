@@ -9,7 +9,7 @@ namespace GOF23
         public void Go()
         {
 
-            #region 创建型设计模式(关注对象的创建)
+            #region 创建型设计模式(关注对象的创建 6个)
 
             #region 单列模式
             //OpentDesign design = new GOF23._01单列模式.Program();
@@ -54,9 +54,14 @@ namespace GOF23
             #endregion
 
             #region 桥接模式
-            OpentDesign design = new GOF23._08桥接模式.Program();
+            //OpentDesign design = new GOF23._08桥接模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 组合模式
+            OpentDesign design = new GOF23._09组合模式.Program();
             design.Open();
-            #endregion  
+            #endregion
 
             #endregion
 
