@@ -71,13 +71,13 @@ namespace GOF23._10装饰器模式
                 //AbstractStudent decorator = new BaseDecorator(student);//里氏替换原则
                 //decorator.Study();
 
-
+                
                 student = new BaseDecorator(student);//把引用类型变量的引用换个地址
                 student = new StudentDecoratorAnswer(student);//课后，和放置顺序有关
                 student = new StudentDecoratorHomeWork(student);//课后，和放置顺序有关
                 student = new StudentDecoratorVideo(student);//课后，和放置顺序有关
-
                 student = new StudentDecoratorPreview(student);//课前，和放置顺序无关
+
                 student.Study();
 
                 //笔试题：2个变量，在不声明第三个变量的基础上，交换值。

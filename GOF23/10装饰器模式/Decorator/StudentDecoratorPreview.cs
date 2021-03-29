@@ -21,8 +21,9 @@ namespace GOF23._10装饰器模式.Decorator
 
         public override void Study()
         {
-            Console.WriteLine("课前完成预习准备");
+            Console.WriteLine("课前预习准备中...");
             base.Study();
+            //Console.WriteLine("课前预习准备好...");
         }
     }
 }

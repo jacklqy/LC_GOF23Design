@@ -11,14 +11,13 @@ namespace GOF23._10装饰器模式
     {
         public override void Show()
         {
-            Console.WriteLine("my name is {0}", this.Name);
+            Console.WriteLine("my name is {0}，公开课学员。", this.Name);
         }
 
         public override void Study()
         {
-            Console.WriteLine("{0} 正在观看视频直播学习~~~~", base.Name);
+            Console.WriteLine("{0} 公开课学员正在观看视频直播学习~~~~", base.Name);
             //如果有功能扩展，OOP就不得不去修改现有代码，破坏现有的封装---这种方式不好
-            //Console.WriteLine("获取视频+课件+代码的回看");
             //能不能不修改原有代码，也能扩展功能。---开闭原则，对扩展开放，对修改关闭。
 
             //又来新需求啦：课前预习+作业巩固练习+老师课后答疑 ，需求很多，而且还要灵活定制

@@ -11,12 +11,12 @@ namespace GOF23._10装饰器模式
     {
         public override void Show()
         {
-            Console.WriteLine("this is {0} 开始看视频学习啦", this.Name);
+            Console.WriteLine("my name is {0}，VIP课学员。", this.Name);
         }
 
         public override void Study()
         {
-            Console.WriteLine("this {0}.{1} {2}", this.GetType().Name, "Study", this.Name);
+            Console.WriteLine("{0} VIP课学员正在观看视频直播学习~~~~", base.Name);
         }
     }
 }
