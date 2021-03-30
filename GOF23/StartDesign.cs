@@ -74,7 +74,12 @@ namespace GOF23
             #endregion
 
             #region 享元模式
-            OpentDesign design = new GOF23._12享元模式.Program();
+            //OpentDesign design = new GOF23._12享元模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 代理模式
+            OpentDesign design = new GOF23._13代理模式.Program();
             design.Open();
             #endregion
 
