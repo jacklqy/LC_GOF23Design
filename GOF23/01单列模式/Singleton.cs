@@ -18,7 +18,7 @@ namespace GOF23._01单列模式
         public static Singleton GetSingleton()
         {
             //双if加锁
-            if (_Singleton == null)
+            if (_Singleton == null)//外面在套一层判断，是为了优化性能，避免对象已经被初始化后，再次请求还需要等待锁。
             {
                 lock (_Singletion_Lock)//可以保证任何时候只有一个线程进入，其他线程等待。
                 {
