@@ -16,7 +16,7 @@ namespace GOF23
             //design.Open();
             #endregion
 
-            #region 简单工厂
+            #region 简单工厂(没有被纳入23种设计模式)
             //OpentDesign design = new GOF23._02简单工厂.Program();
             //design.Open();
             #endregion
@@ -68,8 +68,13 @@ namespace GOF23
             //design.Open();
             #endregion
 
-            #region 外观模式
-            OpentDesign design = new GOF23._11外观模式.Program();
+            #region 外观模式(门面模式)
+            //OpentDesign design = new GOF23._11外观模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 享元模式
+            OpentDesign design = new GOF23._12享元模式.Program();
             design.Open();
             #endregion
 

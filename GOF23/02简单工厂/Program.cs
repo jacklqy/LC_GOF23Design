@@ -30,6 +30,9 @@ namespace GOF23._02简单工厂
             IRace human2 = ObjectFactory.CreateInstanceConfig();
             player.Play(human2);
 
+            //3、通过反射dll文件方式创建对象
+            IRace human3 = ObjectFactory.CreateInstanceConfigReflection();
+            player.Play(human3);
 
             //{
             //    IRace human = new Human();

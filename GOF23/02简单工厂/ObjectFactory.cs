@@ -15,6 +15,9 @@ namespace GOF23._02简单工厂
     {
         private static string _ReacType = null;
         private static string _ReacTypeReflection = null;
+        /// <summary>
+        /// 静态构造函数：由CLR保证，在第一次使用这个类之前，自动被调用且只调用一次.
+        /// </summary>
         static ObjectFactory()
         {
             var config = new ConfigurationBuilder()
