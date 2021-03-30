@@ -7,6 +7,7 @@ namespace GOF23._12享元模式
     public class OtherClass
     {
         public string teacherOther = "Eleven";
+        public string teacherPlus = "Elev" + "en";
         public static void Show()
         {
             //准备打印个Eleven

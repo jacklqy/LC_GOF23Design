@@ -141,12 +141,21 @@ namespace GOF23._12享元模式
                 //只要是同一个进程，分配Eleven都是同一个内存地址的。
 
                 //第二题：
-                string teacherFormat = string.Format("Ele{0}","ven");
+                string teacherFormat = string.Format("Ele{0}","ven");//两个独立的变量拼接
                 string lastPart = "ven";
-                string teacherCombination = "Ele" + lastPart;
-                Console.WriteLine($"C#内存分配探讨(第二题)---object.ReferenceEquals(teacherOpen, teacherFormat){object.ReferenceEquals(teacherOpen, teacherFormat)}");
-                Console.WriteLine($"C#内存分配探讨(第二题)---object.ReferenceEquals(teacherOpen, teacherCombination){object.ReferenceEquals(teacherOpen, teacherCombination)}");
-                Console.WriteLine($"C#内存分配探讨(第二题)---object.ReferenceEquals(teacherFormat, teacherCombination){object.ReferenceEquals(teacherFormat, teacherCombination)}");
+                string teacherCombination = "Ele" + lastPart;//两个独立的变量拼接
+                Console.WriteLine($"C#内存分配探讨(第二题)---object.ReferenceEquals(teacherOpen, teacherFormat){object.ReferenceEquals(teacherOpen, teacherFormat)}");//false
+                Console.WriteLine($"C#内存分配探讨(第二题)---object.ReferenceEquals(teacherOpen, teacherCombination){object.ReferenceEquals(teacherOpen, teacherCombination)}");//false
+                Console.WriteLine($"C#内存分配探讨(第二题)---object.ReferenceEquals(teacherFormat, teacherCombination){object.ReferenceEquals(teacherFormat, teacherCombination)}");//false
+                //分配Eleven都是同一个内存地址的，但是这两个都不是分配Eleven，而是部分分配，虽然结果最终是Eleven，但是没法重用。
+
+                //第三题
+                string teacherPlus = "Ele" + "ven";
+                Console.WriteLine($"C#内存分配探讨(第三题)---object.ReferenceEquals(teacherOpen, teacherPlus){object.ReferenceEquals(teacherOpen, teacherPlus)}");//true
+                Console.WriteLine($"C#内存分配探讨(第三题)---object.ReferenceEquals(teacherOpen, new OtherClass().teacherPlus){object.ReferenceEquals(teacherOpen, new OtherClass().teacherPlus)}");//true
+                Console.WriteLine($"C#内存分配探讨(第三题)---object.ReferenceEquals(teacherPlus, new OtherClass().teacherPlus){object.ReferenceEquals(teacherPlus, new OtherClass().teacherPlus)}");//true
+                //编译器优化，string teacherPlus = "Ele" + "ven";等同于string teacherOpen = "Eleven";
+
             }
         }
 
