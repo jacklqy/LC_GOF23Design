@@ -34,7 +34,7 @@ namespace GOF23._11外观模式
         public override void Open()
         {
             Console.WriteLine("***************外观模式************");
-            //模拟一个业务场景：用户需要登录检测，然后检测库存、物流、订单，然后才能下单。
+            //模拟一个业务场景：用户需要登录检测，然后检测库存、物流、订单，检测通过后才能下单。
 
             int userId = 123;
             int productId = 123456;

@@ -25,6 +25,9 @@ namespace GOF23._10装饰器模式
         }
     }
 
+
+
+    #region MyRegion
     /// <summary>
     /// 方式一：类继承
     /// </summary>
@@ -51,5 +54,6 @@ namespace GOF23._10装饰器模式
             this._Student.Study();
             Console.WriteLine("获取视频+课件+代码的回看");
         }
-    }
+    } 
+    #endregion
 }

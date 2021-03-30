@@ -71,7 +71,7 @@ namespace GOF23._10装饰器模式
                 //AbstractStudent decorator = new BaseDecorator(student);//里氏替换原则
                 //decorator.Study();
 
-                
+                //俄罗斯套娃
                 student = new BaseDecorator(student);//把引用类型变量的引用换个地址
                 student = new StudentDecoratorAnswer(student);//课后，和放置顺序有关
                 student = new StudentDecoratorHomeWork(student);//课后，和放置顺序有关
