@@ -101,7 +101,13 @@ namespace GOF23
             #region 行为型设计模式(关注对象与行为的分离 11个)
 
             #region 解释器模式
-            OpentDesign design = new GOF23._14解释器模式.Program();
+            //OpentDesign design = new GOF23._14解释器模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 模板模式
+            //定义业务处理流程，实现了通用部分，把可变部分留作扩展点。
+            OpentDesign design = new GOF23._15模板模式.Program();
             design.Open();
             #endregion
 
