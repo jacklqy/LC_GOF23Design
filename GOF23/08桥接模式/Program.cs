@@ -45,6 +45,7 @@ namespace GOF23._08桥接模式
             //多重继承与变化封装，桥接模式解决多维度的变化
             //品牌个数*操作系统个数，后续如果还要增加某个品牌手机，那简直要崩溃...
             {
+                //需求场景：现实生活中，需要将iPhone手机刷机安装Android操作系统，把iPhone手机当Android手机使用；然后还可以把iPhone手机刷机安装Winphone操作系统，把iPhone手机当Winphone手机使用。
                 BasePhone phone = new iPhone();
                 phone.Call();
                 phone.Text();
@@ -90,17 +91,26 @@ namespace GOF23._08桥接模式
                 androidBridge1.Call();
                 androidBridge1.Text();
 
-                BasePhoneBridge androidBridge2 = new GalaxyBridge();
-                androidBridge2.SystemVersion = ios;
-                androidBridge2.Call();
-                androidBridge2.Text();
+                androidBridge1.SystemVersion = ios;
+                androidBridge1.Call();
+                androidBridge1.Text();
 
-                BasePhoneBridge androidBridge3 = new GalaxyBridge();
-                androidBridge3.SystemVersion = winphone;
-                androidBridge3.Call();
-                androidBridge3.Text();
+                androidBridge1.SystemVersion = winphone;
+                androidBridge1.Call();
+                androidBridge1.Text();
 
-                //...
+                //BasePhoneBridge iPhoneBridge1 = new iPhoneBridge();
+                //iPhoneBridge1.SystemVersion = android;
+                //iPhoneBridge1.Call();
+                //iPhoneBridge1.Text();
+                //..
+
+                //BasePhoneBridge lumiaBridge1 = new LumiaBridge();
+                //lumiaBridge1.SystemVersion = android;
+                //lumiaBridge1.Call();
+                //lumiaBridge1.Text();
+                //..
+
 
             }
         }

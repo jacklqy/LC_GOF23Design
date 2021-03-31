@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 
 /// <summary>
+/// 侧重点：工厂方法(单产品)/抽象工厂(产品族)
 /// 意图：定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。
 /// 主要解决：主要解决接口选择的问题。
 /// 何时使用：我们明确地计划不同条件下创建不同实例时。
@@ -38,7 +39,7 @@ namespace GOF23._03工厂方法
                 IRace iRaceFive = fiveFactory.CreateInstance();
                 iRaceFive.ShowKing();
 
-                //使用扩展的工厂
+                //使用扩展的工厂(在原始工厂基础上包了一层)
                 IFactory fiveFactoryExtend = new FiveFactoryExtend();
                 IRace iRaceFiveExtend = fiveFactoryExtend.CreateInstance();
                 iRaceFiveExtend.ShowKing();

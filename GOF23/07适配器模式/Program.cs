@@ -58,7 +58,9 @@ namespace GOF23._07适配器模式
                 helper.Update<Program>();
                 helper.Query<Program>();
             }
+
             Console.WriteLine("*********************类适配器********************");
+            //需求场景：有动机地修改一个正常运行的系统的接口，这时应该考虑使用适配器模式。且增加的这个是第三方库，我们无法改第三方库的情况下。
             {
                 //适配器经典语录：没有什么是包一层不能解决的，如果不行那就在包一层。
                 IHelper helper = new RedisHelperClassAdapter();//new RedisHelper();

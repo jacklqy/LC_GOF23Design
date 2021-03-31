@@ -71,7 +71,12 @@ namespace GOF23._10装饰器模式
                 //AbstractStudent decorator = new BaseDecorator(student);//里氏替换原则
                 //decorator.Study();
 
-                //俄罗斯套娃
+                //需求场景：
+                //能不能不修改原有代码，也能扩展功能。---开闭原则，对扩展开放，对修改关闭。
+                //又来新需求啦：课前预习+作业巩固练习+老师课后答疑 ，需求很多，而且还要灵活定制
+                //一个业务功能在完成后，希望能够任意的扩展功能，订制顺序，而且不破坏封装。
+
+                //俄罗斯套娃,C#内存分配机制
                 student = new BaseDecorator(student);//把引用类型变量的引用换个地址
                 student = new StudentDecoratorAnswer(student);//课后，和放置顺序有关
                 student = new StudentDecoratorHomeWork(student);//课后，和放置顺序有关

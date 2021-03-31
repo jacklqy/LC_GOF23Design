@@ -154,7 +154,7 @@ namespace GOF23._12享元模式
                 Console.WriteLine($"C#内存分配探讨(第三题)---object.ReferenceEquals(teacherOpen, teacherPlus){object.ReferenceEquals(teacherOpen, teacherPlus)}");//true
                 Console.WriteLine($"C#内存分配探讨(第三题)---object.ReferenceEquals(teacherOpen, new OtherClass().teacherPlus){object.ReferenceEquals(teacherOpen, new OtherClass().teacherPlus)}");//true
                 Console.WriteLine($"C#内存分配探讨(第三题)---object.ReferenceEquals(teacherPlus, new OtherClass().teacherPlus){object.ReferenceEquals(teacherPlus, new OtherClass().teacherPlus)}");//true
-                //编译器优化，string teacherPlus = "Ele" + "ven";等同于string teacherOpen = "Eleven";
+                //编译器优化：string teacherPlus = "Ele" + "ven";等同于string teacherOpen = "Eleven";
 
             }
         }

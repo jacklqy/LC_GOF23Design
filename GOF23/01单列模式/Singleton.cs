@@ -9,12 +9,22 @@ namespace GOF23._01单列模式
     /// </summary>
     public sealed class Singleton
     {
-        public static Singleton _Singleton = null;
-        public static readonly object _Singletion_Lock = new object();
+        private static Singleton _Singleton = null;
+        /// <summary>
+        /// 锁
+        /// </summary>
+        private static readonly object _Singletion_Lock = new object();
+        /// <summary>
+        /// 私有化构造函数
+        /// </summary>
         private Singleton()
         {
             Console.WriteLine("Singleton被实例化啦...");
         }
+        /// <summary>
+        /// 对外提供获取实例的统一入口
+        /// </summary>
+        /// <returns></returns>
         public static Singleton GetSingleton()
         {
             //双if加锁

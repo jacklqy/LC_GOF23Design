@@ -17,7 +17,7 @@ namespace GOF23._06原型模式
     ///     4、当一个类的实例只能有几个不同状态组合中的一种时。建立相应数目的原型并克隆它们可能比每次用合适的状态手工实例化该类更方便一些。
     /// 如何解决：利用已有的一个原型对象，快速地生成和原型对象一样的实例。
     /// 使用场景： 
-    ///     1、资源优化场景。 
+    ///     1、资源优化场景。 (比如画象棋格子，先初始化一个对象，后面批量clone许多格子对象，然后在根据业务场景对这些格子对象分别设置不同的属性值。)
     ///     2、类初始化需要消化非常多的资源，这个资源包括数据、硬件资源等。 
     ///     3、性能和安全要求的场景。 
     ///     4、通过 new 产生一个对象需要非常繁琐的数据准备或访问权限，则可以使用原型模式。 
@@ -72,10 +72,11 @@ namespace GOF23._06原型模式
 
                 //        studentSingleton1.Study();
                 //        studentSingleton2.Study();
-                //        //单列---整个进程只有一个实例--能出现两个学生吗？不可能！---后面会覆盖前面的
+                //        //单列---整个进程只有一个实例--能出现两个学生吗？不可能！---后面的修改会覆盖前面的修改值
                 //    }
                 //}
 
+                Console.WriteLine("*******************浅拷贝*******************");
                 {
                     //单列可以对象复用----但是会出现覆盖
                     //能不能不覆盖，但是性能也高？
@@ -116,11 +117,50 @@ namespace GOF23._06原型模式
                 }
 
                 {
+                    ///不理解引用类型和值类型区别的程序员将会给代码引入诡异的bug和性能问题
                     ///C#内存分配 进程堆(进程唯一) 线程栈(每个线程一个)
-                    ///引用类型在堆里，值类型在栈里---变量都在栈里
+                    ///引用类型在堆里，值类型在栈里---变量是值还是引用仅取决于其数据类型。注意：简单地说“值类型存储在栈上，引用类型存储在托管堆上”是不对的。必须具体情况具体分析。比如类型嵌套。
                     ///引用类型对象里面的值类型----studentPrototype1.Id是存储在堆还是栈？在堆里
                     ///值类型里面的引用类型----Customer.Name是存储在堆还是栈？在堆里(任何引用类型的值都在堆里)
+                    ///
+                    ///***值类型***
+                    ///整 型：sbyte（System.SByte的别名），short（System.Int16），int（System.Int32），long （System.Int64），byte（System.Byte），ushort（System.UInt16），uint （System.UInt32），ulong（System.UInt64），char（System.Char）；
+                    ///浮点型：float（System.Single），double（System.Double）；
+                    ///用于财务计算的高精度decimal型：decimal（System.Decimal）。
+                    ///bool型：bool（System.Boolean的别名）；
+                    ///结构体：struct
+                    ///枚举：enum
+                    ///C#的所有值类型均隐式派生自System.ValueType
+                    ///int i = new int();等价于Int32 i = new Int32();等价于int i = 0;等价于Int32 i = 0;
+                    ///值得注意的是，System.ValueType直接派生于System.Object。即System.ValueType本身是一个类类型，而不是值类型。其关键在于ValueType重写了Equals()方法，从而对值类型按照实例的值来比较，而不是引用地址来比较。
+                    ///可以用Type.IsValueType属性来判断一个类型是否为值类型。
+                    ///所有的值类型都是密封（seal）的，所以无法派生出新的值类型。
+                    ///
+                    ///***引用类型***
+                    ///数组/类/接口/委托/object/字符串
+                    ///
+
+
                 }
+
+                Console.WriteLine("*******************深拷贝*******************");
+                {
+                    StudentPrototype studentPrototype1 = StudentPrototype.GetInstanceSerializ();
+                    StudentPrototype studentPrototype2 = StudentPrototype.GetInstanceSerializ();
+                    studentPrototype1.Id = 111;
+                    studentPrototype1.Name = "修改名称111";
+                    studentPrototype1.book.BookId = 111;
+                    studentPrototype1.book.BookName = "book111";
+
+                    studentPrototype2.Id = 222;
+                    studentPrototype2.Name = "修改名称222";
+                    studentPrototype2.book.BookId = 222;
+                    studentPrototype2.book.BookName = "book222";
+
+                    studentPrototype1.Study();
+                    studentPrototype2.Study();
+                }
+
             }
             catch (Exception ex)
             {

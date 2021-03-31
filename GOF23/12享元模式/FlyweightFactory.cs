@@ -5,20 +5,20 @@ using System.Text;
 namespace GOF23._12享元模式
 {
     /// <summary>
-    /// 1 统一
+    /// 简单工厂+锁=享元工厂
     /// </summary>
     public class FlyweightFactory
     {
         //添加重用逻辑，静态字典缓存(非线程安全)
         private static Dictionary<WordType, BaseWord> _FlyweightFactoryDictionary = new Dictionary<WordType, BaseWord>();
         //锁
-        private readonly static object FlyweightFactoryLock = new object();
+        private readonly static object _FlyweightFactoryLock = new object();
         public static BaseWord CreateWord(WordType wordType)
         {
             //双if加锁
             if (!_FlyweightFactoryDictionary.ContainsKey(wordType))//外面在套一层判断，是为了优化性能，避免对象已经被初始化后，再次请求还需要等待锁。
             {
-                lock (FlyweightFactoryLock)//Monitor.Enter，保证方法体只有一个线程可以进入
+                lock (_FlyweightFactoryLock)//Monitor.Enter，保证方法体只有一个线程可以进入
                 {
                     if (!_FlyweightFactoryDictionary.ContainsKey(wordType))
                     {

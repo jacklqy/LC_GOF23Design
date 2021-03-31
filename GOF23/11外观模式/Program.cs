@@ -33,14 +33,12 @@ namespace GOF23._11外观模式
     {
         public override void Open()
         {
-            Console.WriteLine("***************外观模式************");
+            Console.WriteLine("***************外观模式(门面模式)************");
             //模拟一个业务场景：用户需要登录检测，然后检测库存、物流、订单，检测通过后才能下单。
 
             int userId = 123;
             int productId = 123456;
             int cityId = 1;
-            FacadeCenter facadeCenter = FacadeCenter.CreateInstance();
-            facadeCenter.NewOrder(userId, productId, cityId);
             {
                 //ILogisticsSystem iLogisticsSystem = new LogisticsSystem();
                 //IOrderSystem iOrderSystem = new OrderSystem();
@@ -68,6 +66,10 @@ namespace GOF23._11外观模式
                 //    iOrderSystem.NewOrder(userId, productId);
                 //    iLogisticsSystem.NewLogistics(productId, cityId);
                 //}
+            }
+            {
+                FacadeCenter facadeCenter = FacadeCenter.CreateInstance();
+                facadeCenter.NewOrder(userId, productId, cityId);
             }
         }
     }
