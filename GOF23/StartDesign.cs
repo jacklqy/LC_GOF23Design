@@ -12,31 +12,37 @@ namespace GOF23
             #region 创建型设计模式(关注对象的创建 6个)
 
             #region 单列模式
+            ////控制整个进程中只创建一个对象
             //OpentDesign design = new GOF23._01单列模式.Program();
             //design.Open();
             #endregion
 
             #region 简单工厂(没有被纳入23种设计模式)
+            ////把对象的创建转移到工厂
             //OpentDesign design = new GOF23._02简单工厂.Program();
             //design.Open();
             #endregion
 
             #region 工厂方法
+            ////把对象的创建转移到工厂的同时，工厂是可以扩展的
             //OpentDesign design = new GOF23._03工厂方法.Program();
             //design.Open();
             #endregion
 
             #region 抽象工厂
+            ////一个工厂有多个职责
             //OpentDesign design = new GOF23._04抽象工厂.Program();
             //design.Open();
             #endregion
 
             #region 建造者模式
+            ////通过Builder创建一些复杂的对象
             //OpentDesign design = new GOF23._05建造者模式.Program();
             //design.Open();
             #endregion
 
             #region 原型模式
+            ////通过clone方式创建对象
             //OpentDesign design = new GOF23._06原型模式.Program();
             //design.Open();
             #endregion
@@ -49,36 +55,43 @@ namespace GOF23
             ///组合优于继承
 
             #region 适配器模式
+            ////是为了把某些类适配起来，不能用的类，通过适配器转换让其可以用起来
             //OpentDesign design = new GOF23._07适配器模式.Program();
             //design.Open();
             #endregion
 
             #region 桥接模式
+            ////把变化的元素封装起来，然后通过桥的方式去访问
             //OpentDesign design = new GOF23._08桥接模式.Program();
             //design.Open();
             #endregion
 
             #region 组合模式
+            ////把一对多转换成一对一
             //OpentDesign design = new GOF23._09组合模式.Program();
             //design.Open();
             #endregion
 
             #region 装饰器模式
+            ////在运行的过程中不断的去增加功能
             //OpentDesign design = new GOF23._10装饰器模式.Program();
             //design.Open();
             #endregion
 
             #region 外观模式(门面模式)
+            ////为子系统中的一组接口提供一个一致的界面
             //OpentDesign design = new GOF23._11外观模式.Program();
             //design.Open();
             #endregion
 
             #region 享元模式
+            ////对象的复用，池化管理
             //OpentDesign design = new GOF23._12享元模式.Program();
             //design.Open();
             #endregion
 
             #region 代理模式
+            ////统一入口
             //OpentDesign design = new GOF23._13代理模式.Program();
             //design.Open();
             #endregion
