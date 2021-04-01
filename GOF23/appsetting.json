@@ -1,4 +1,7 @@
 {
   "IReacType": "Human",
-  "IReacTypeReflection": "���ȫ����,dllȫ����"
+  "IReacTypeReflection": "类的全名称,dll全名称",
+  "r": "GOF23._17命令模式.ReadCommand,GOF23",
+  "w": "GOF23._17命令模式.WriteCommand,GOF23",
+  "s": "GOF23._17命令模式.SaveCommand,GOF23"
 }
