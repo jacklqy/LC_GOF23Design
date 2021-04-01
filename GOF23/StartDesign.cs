@@ -4,6 +4,11 @@ using System.Text;
 
 namespace GOF23
 {
+    /// <summary>
+    /// 什么是设计模式？
+    /// 设计模式：面向对象语言开发过程中，遇到的种种场景和问题，提出的解决问题的方案和思路，最终沉淀下来的解决问题的方法。
+    ///           不会过时，即使是新的跨平台框架里面，思想是不变的
+    /// </summary>
     public class StartDesign
     {
         public void Go()
@@ -106,8 +111,14 @@ namespace GOF23
             #endregion
 
             #region 模板模式
-            //定义业务处理流程，实现了通用部分，把可变部分留作扩展点。
-            OpentDesign design = new GOF23._15模板模式.Program();
+            ////定义业务处理流程，实现了通用部分，把可变部分留作扩展点。
+            //OpentDesign design = new GOF23._15模板模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 责任链模式
+            //
+            OpentDesign design = new GOF23._16责任链模式.Program();
             design.Open();
             #endregion
 
