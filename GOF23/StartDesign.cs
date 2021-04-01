@@ -106,6 +106,7 @@ namespace GOF23
             #region 行为型设计模式(关注对象与行为的分离 11个)
 
             #region 解释器模式
+            ////可以将一个需要解释执行的语言中的句子表示为一个抽象语法树
             //OpentDesign design = new GOF23._14解释器模式.Program();
             //design.Open();
             #endregion
@@ -117,8 +118,14 @@ namespace GOF23
             #endregion
 
             #region 责任链模式
+            ////有多个对象可以处理同一个请求，具体哪个对象处理该请求由运行时刻自动确定。比如请假审批流程、工作流
+            //OpentDesign design = new GOF23._16责任链模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 命令模式
             //
-            OpentDesign design = new GOF23._16责任链模式.Program();
+            OpentDesign design = new GOF23._17命令模式.Program();
             design.Open();
             #endregion
 
