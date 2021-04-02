@@ -5,36 +5,36 @@ using System.Text;
 namespace GOF23._18迭代器模式.Menu
 {
     /// <summary>
-    /// KFC菜单
+    /// 德克士菜单
     /// </summary>
-    public class KFCMenu
+    public class DicosMenu
     {
 
-        private Food[] _FoodList = new Food[3];
-        public KFCMenu()
+        private Dictionary<int, Food> _FoodDic = new Dictionary<int, Food>();
+        public DicosMenu()
         {
-            this._FoodList[0] = new Food()
+            this._FoodDic.Add(0, new Food()
             {
                 Id = 1,
-                Name = "汉堡",
+                Name = "脆皮炸鸡",
                 Price = 15
-            };
-            this._FoodList[1] = new Food()
+            });
+            this._FoodDic.Add(1, new Food()
             {
                 Id = 2,
-                Name = "可乐",
+                Name = "咔哧咔哧",
                 Price = 10
-            };
-            this._FoodList[2] = new Food()
+            });
+            this._FoodDic.Add(2, new Food()
             {
                 Id = 3,
                 Name = "薯条",
                 Price = 8
-            };
+            });
         }
-        public Food[] GetFoods()
+        public Dictionary<int, Food> GetFoods()
         {
-            return this._FoodList;
+            return this._FoodDic;
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace GOF23._18迭代器模式.Menu
         /// <returns></returns>
         public IIterator<Food> GetIterator()
         {
-            return new KFCMenuIterator(this);
+            return new DicosMenuIterator(this);
         }
     }
 }
