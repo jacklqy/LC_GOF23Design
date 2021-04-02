@@ -124,8 +124,14 @@ namespace GOF23
             #endregion
 
             #region 命令模式
+            ////将一个请求封装成一个对象，从而使您可以用不同的请求对客户进行参数化
+            //OpentDesign design = new GOF23._17命令模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 迭代器模式
             //
-            OpentDesign design = new GOF23._17命令模式.Program();
+            OpentDesign design = new GOF23._18迭代器模式.Program();
             design.Open();
             #endregion
 
