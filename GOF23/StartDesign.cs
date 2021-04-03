@@ -136,8 +136,14 @@ namespace GOF23
             #endregion
 
             #region 中介者模式
-            //用一个中介对象来封装一系列的对象交互，中介者使各对象不需要显式地相互引用
-            OpentDesign design = new GOF23._19中介者模式.Program();
+            ////用一个中介对象来封装一系列的对象交互，中介者使各对象不需要显式地相互引用
+            //OpentDesign design = new GOF23._19中介者模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 备忘录模式
+            //在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态
+            OpentDesign design = new GOF23._20备忘录模式.Program();
             design.Open();
             #endregion
 
