@@ -130,8 +130,14 @@ namespace GOF23
             #endregion
 
             #region 迭代器模式
-            //
-            OpentDesign design = new GOF23._18迭代器模式.Program();
+            ////提供一个通用的方式去访问不同的集合
+            //OpentDesign design = new GOF23._18迭代器模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 中介者模式
+            //用一个中介对象来封装一系列的对象交互，中介者使各对象不需要显式地相互引用
+            OpentDesign design = new GOF23._19中介者模式.Program();
             design.Open();
             #endregion
 
