@@ -1,8 +1,9 @@
-﻿using System;
+﻿using GOF23._22状态模式.Light;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GOF23._22状态模式.Light
+namespace GOF23._22状态模式
 {
     public class Context
     {
