@@ -148,8 +148,14 @@ namespace GOF23
             #endregion
 
             #region 观察者模式
-            //定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新
-            OpentDesign design = new GOF23._21观察者模式.Program();
+            ////定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新
+            //OpentDesign design = new GOF23._21观察者模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 状态模式
+            //允许对象在内部状态发生改变时改变它的行为，对象看起来好像修改了它的类
+            OpentDesign design = new GOF23._22状态模式.Program();
             design.Open();
             #endregion
 
