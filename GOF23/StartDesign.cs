@@ -142,8 +142,14 @@ namespace GOF23
             #endregion
 
             #region 备忘录模式
-            //在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态
-            OpentDesign design = new GOF23._20备忘录模式.Program();
+            ////在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态
+            //OpentDesign design = new GOF23._20备忘录模式.Program();
+            //design.Open();
+            #endregion
+
+            #region 观察者模式
+            //定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新
+            OpentDesign design = new GOF23._21观察者模式.Program();
             design.Open();
             #endregion
 
