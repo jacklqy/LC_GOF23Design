@@ -1,7 +1,14 @@
 {
   "IReacType": "Human",
   "IReacTypeReflection": "类的全名称,dll全名称",
+
   "r": "GOF23._17命令模式.ReadCommand,GOF23",
   "w": "GOF23._17命令模式.WriteCommand,GOF23",
-  "s": "GOF23._17命令模式.SaveCommand,GOF23"
+  "s": "GOF23._17命令模式.SaveCommand,GOF23",
+
+  "ICaculation+": "GOF23._23策略模式.Plus,GOF23",
+  "ICaculation-": "GOF23._23策略模式.Minus,GOF23",
+  "ICaculation*": "GOF23._23策略模式.Mutiply,GOF23",
+  "ICaculation/": "GOF23._23策略模式.Devision,GOF23",
+  "CaCulationType": "+,-,*,/,%"
 }
