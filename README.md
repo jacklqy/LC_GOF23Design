@@ -1,14 +1,9 @@
 # LC_GOF23Design
-设计模式：面向对象语言开发过程中，遇到的种种场景和问题，提出的解决问题的方案和思路，最终沉淀下来的解决问题的方法，然后根据自己业务需求选择适合自己的模式。
+设计模式：面向对象语言开发过程中，遇到的种种场景和问题，提出的解决问题的方案和思路，最终沉淀下来的解决问题的方法，然后根据自己业务需求选择适合自己的模式。(简单就意味着强大，简单就意味着稳定)
 
 ![image](https://user-images.githubusercontent.com/26539681/113074893-7eccbe00-91fe-11eb-9b23-d6166244167a.png)
 ![image](https://user-images.githubusercontent.com/26539681/113075017-bb001e80-91fe-11eb-9660-98ac671c201c.png)
 ![image](https://user-images.githubusercontent.com/26539681/113075048-c81d0d80-91fe-11eb-87a5-4fc01e47a75b.png)
-
-
-
-
-
 
 23中设计模式说明：https://www.runoob.com/design-pattern/design-pattern-tutorial.html
 
