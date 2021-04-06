@@ -11,7 +11,7 @@ namespace GOF23._05建造者模式
     public class Director
     {
         private AbstractBuilder _AbstractBuilder = null;
-        public Director(AbstractBuilder abstractBuilder)
+        public Director(AbstractBuilder abstractBuilder)//构造函数注入(方法注入、构造函数注入、成员变量注入)
         {
             this._AbstractBuilder = abstractBuilder;
         }

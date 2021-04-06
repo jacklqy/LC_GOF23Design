@@ -35,6 +35,7 @@ namespace GOF23._07适配器模式
         public override void Open()
         {
             Console.WriteLine("*****************适配器模式**************");
+
             {
                 IHelper helper = new SqlserverHelper();
                 helper.Add<Program>();

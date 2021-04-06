@@ -13,7 +13,7 @@ namespace GOF23._03工厂方法
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public void Play(IRace iRace)
+        public void Play(IRace iRace)//方法注入(方法注入、构造函数注入、成员变量注入)
         {
             Console.WriteLine("***********************");
             Console.WriteLine("This is {0} Play War3.{1}", this.Name, iRace.GetType().Name);

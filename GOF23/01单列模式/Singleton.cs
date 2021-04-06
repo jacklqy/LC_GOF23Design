@@ -5,13 +5,13 @@ using System.Text;
 namespace GOF23._01单列模式
 {
     /// <summary>
-    /// 懒汉式
+    /// 懒汉式（双if加锁）
     /// </summary>
     public sealed class Singleton
     {
         private static Singleton _Singleton = null;
         /// <summary>
-        /// 锁
+        /// 锁，微软官方推荐static readonly
         /// </summary>
         private static readonly object _Singletion_Lock = new object();
         /// <summary>

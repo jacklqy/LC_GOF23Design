@@ -28,6 +28,7 @@ namespace GOF23._02简单工厂
         }
         /// <summary>
         /// 1、根据传入的枚举类型创建对象
+        /// 这里只是上端将问题转移到了这里，实际没有解决问题，即单一职责、迪米特法则
         /// </summary>
         /// <param name="reacType">枚举类型</param>
         /// <returns></returns>

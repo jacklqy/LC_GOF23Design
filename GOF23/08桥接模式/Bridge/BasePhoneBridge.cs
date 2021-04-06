@@ -16,6 +16,7 @@ namespace GOF23._08桥接模式
 
         /// <summary>
         /// 变化封装：将System和Version封装，由上端指定。
+        /// 属性注入 (方法注入、构造函数注入、成员变量注入)
         /// </summary>
         public ISystem SystemVersion { get; set; }
 

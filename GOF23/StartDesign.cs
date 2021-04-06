@@ -11,6 +11,9 @@ namespace GOF23
     /// </summary>
     public class StartDesign
     {
+        /// <summary>
+        /// 入口
+        /// </summary>
         public void Go()
         {
 

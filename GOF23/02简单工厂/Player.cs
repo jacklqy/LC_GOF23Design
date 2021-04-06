@@ -13,7 +13,11 @@ namespace GOF23._02简单工厂
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public void Play(IRace iRace)
+        /// <summary>
+        /// 方法注入灵活/构造函数注入只有在初始化是才可以，比较局限。/成员变量注入一开始就固定了。
+        /// </summary>
+        /// <param name="iRace"></param>
+        public void Play(IRace iRace)//方法注入(方法注入、构造函数注入、成员变量注入)
         {
             Console.WriteLine("***********************");
             Console.WriteLine("This is {0} Play War3.{1}", this.Name, iRace.GetType().Name);
