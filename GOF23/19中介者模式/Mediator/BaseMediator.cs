@@ -14,7 +14,7 @@ namespace GOF23._19中介者模式.Mediator
         private List<BaseCharacter> _CharacterList = null;
         public BaseMediator()
         {
-
+            _CharacterList = new List<BaseCharacter>();
         }
 
         /// <summary>

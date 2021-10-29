@@ -82,8 +82,8 @@ namespace GOF23
 
             #region 10、装饰器模式
             ////在运行的过程中不断的去增加功能
-            //OpentDesign design = new GOF23._10装饰器模式.Program();
-            //design.Open();
+            OpentDesign design = new GOF23._10装饰器模式.Program();
+            design.Open();
             #endregion
 
             #region 11、外观模式(门面模式)
@@ -140,7 +140,7 @@ namespace GOF23
             #endregion
 
             #region 19、中介者模式
-            ////用一个中介对象来封装一系列的对象交互，中介者使各对象不需要显式地相互引用
+            //用一个中介对象来封装一系列的对象交互，中介者使各对象不需要显式地相互引用
             //OpentDesign design = new GOF23._19中介者模式.Program();
             //design.Open();
             #endregion
@@ -170,9 +170,9 @@ namespace GOF23
             #endregion
 
             #region 24、访问者模式
-            //
-            OpentDesign design = new GOF23._24访问者模式.Program();
-            design.Open();
+            ////
+            //OpentDesign design = new GOF23._24访问者模式.Program();
+            //design.Open();
             #endregion
 
             #endregion
