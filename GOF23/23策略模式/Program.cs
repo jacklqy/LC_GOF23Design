@@ -162,7 +162,7 @@ namespace GOF23._23策略模式
                     //int iResult = iCaculation.Caculation(iInputLeft, iInputRight);
                     //3 转移了算法创建以及映射关系，封装了一下
                     iCaculation = Factory.GetCaculationReflection(operate);//Factory.GetCaculation(operate);
-                    CaculationContext context = new CaculationContext(iCaculation, iInputLeft, iInputRight);
+                    CaculationContext context = new CaculationContext(iCaculation, iInputLeft, iInputRight);//CaculationContext可以不用每次都new，只需一个实例就可以
                     //2 转移了算法的调用逻辑
                     int iResult = context.Action();
                     Console.WriteLine("计算为：{0}{1}{2}={3}", iInputLeft, operate, iInputRight, iResult);
