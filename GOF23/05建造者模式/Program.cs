@@ -56,7 +56,7 @@ namespace GOF23._05建造者模式
             {
                 //比亚迪汽车建造
                 AbstractBuilder builderBYD = new BuilderBYD();
-                Director director = new Director(builderBYD);
+                Director director = new Director(builderBYD);//包一层
                 Car car = director.GetCar();
                 Console.WriteLine("{0}--被造好啦~~~", car.Name);
             }
