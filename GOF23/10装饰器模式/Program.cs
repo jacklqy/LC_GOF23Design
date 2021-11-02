@@ -35,31 +35,31 @@ namespace GOF23._10装饰器模式
             Console.WriteLine("********************装饰器模式**************");
 
             {
-                //
-                AbstractStudent studentFree = new StudentFree()
-                {
-                    Id = 111,
-                    Name = "jack111"
-                };
-                studentFree.Study();
+                ////
+                //AbstractStudent studentFree = new StudentFree()
+                //{
+                //    Id = 111,
+                //    Name = "jack111"
+                //};
+                //studentFree.Study();
 
-                //集成方式实现扩展
-                AbstractStudent studentVideo = new StudentFreeVideo()
-                {
-                    Id = 222,
-                    Name = "jack222"
-                };
-                studentVideo.Study();
+                ////集成方式实现扩展
+                //AbstractStudent studentVideo = new StudentFreeVideo()
+                //{
+                //    Id = 222,
+                //    Name = "jack222"
+                //};
+                //studentVideo.Study();
 
-                //组合方式实现扩展
-                StudentCombination studentCombination = new StudentCombination(studentVideo);
-                studentCombination.Study();
+                ////组合方式实现扩展
+                //StudentCombination studentCombination = new StudentCombination(studentVideo);
+                //studentCombination.Study();
             }
 
             Console.WriteLine("&&&&&&&&&&&&&&&&苦难是一种财务，它打不垮你就会让你更强大&&&&&&&&&&&&&&&&&");
 
             {
-                AbstractStudent student = new StudentFree()
+                AbstractStudent student = new StudentFree() //这里是由运行时决定的，不是由编译时决定的。
                 {
                     Id = 111,
                     Name = "jack111"
@@ -76,8 +76,10 @@ namespace GOF23._10装饰器模式
                 //又来新需求啦：课前预习+作业巩固练习+老师课后答疑 ，需求很多，而且还要灵活定制
                 //一个业务功能在完成后，希望能够任意的扩展功能，订制顺序，而且不破坏封装。
 
-                //俄罗斯套娃,C#内存分配机制
-                student = new BaseDecorator(student);//把引用类型变量的引用换个地址
+                //俄罗斯套娃,C#内存分配机制,把引用类型变量的引用换个地址  --》和递归调用和相似
+
+                student = new BaseDecorator(student);//这里可以注释掉
+
                 student = new StudentDecoratorAnswer(student);//课后，和放置顺序有关
                 student = new StudentDecoratorHomeWork(student);//课后，和放置顺序有关
                 student = new StudentDecoratorVideo(student);//课后，和放置顺序有关

@@ -6,11 +6,26 @@ namespace GOF23._13代理模式
 {
     public class ProxySubject : ISubject
     {
-        //3、单例代理
+        //3、单例代理(双if+锁)
         private static ISubject _iSubject = null;//new RealSubject();
+        /// <summary>
+        /// 锁，微软官方推荐static readonly
+        /// </summary>
+        private static readonly object _Singletion_Lock = new object();
         private void Init()
         {
-            _iSubject = new RealSubject();//5、延迟代理，把一开始就构造对象换成了 延迟到 调用Init才会初始化
+            //双if加锁
+            if (_iSubject == null)//外面在套一层判断，是为了优化性能，避免对象已经被初始化后，再次请求还需要等待锁。
+            {
+                lock (_Singletion_Lock)//可以保证任何时候只有一个线程进入，其他线程等待。
+                {
+                    if (_iSubject == null)
+                    {
+                        _iSubject = new RealSubject();//5、延迟代理，把一开始就构造对象换成了 延迟到 调用Init才会初始化
+                    }
+                }
+            }
+            
         }
         public void DoSomethingLong()
         {

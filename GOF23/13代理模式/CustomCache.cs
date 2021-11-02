@@ -10,7 +10,7 @@ namespace GOF23._13代理模式
     /// </summary>
     public class CustomCache
     {
-        private static Dictionary<string, object> CustomCacheDictionary = new Dictionary<string, object>();
+        private static Dictionary<string, object> CustomCacheDictionary = new Dictionary<string, object>();//可考虑用线程安全字典
         public static void Add(string key,object oValue)
         {
             CustomCacheDictionary.Add(key, oValue);
