@@ -16,7 +16,7 @@ namespace GOF23._22状态模式.Light
         public abstract void Show();
 
         /// <summary>
-        /// 交通信号灯转换
+        /// 交通信号灯转换（可以去掉）
         /// 红灯转绿灯
         /// </summary>
         public abstract void Turn();

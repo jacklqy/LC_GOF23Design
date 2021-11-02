@@ -7,7 +7,8 @@ namespace GOF23._22状态模式
 {
     public class Context
     {
-        public LightBase CurrentLight { get; set; }
+        //属性注入
+        public LightBase CurrentLight { get; set; }//类的组合：字段注入、属性注入、方法注入、构造函数注入
         public void Show()
         {
             this.CurrentLight.Show();

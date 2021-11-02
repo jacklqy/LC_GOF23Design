@@ -15,7 +15,7 @@ namespace GOF23._23策略模式
     /// </summary>
     public class CaculationContext
     {
-        private ICaculation _iCaculation = null;
+        private ICaculation _iCaculation = null;//类的组合：字段注入、属性注入、方法注入、构造函数注入
         private int _iInputLeft = 0;
         private int _iInputRight = 0;
         /// <summary>

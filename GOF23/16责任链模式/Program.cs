@@ -179,7 +179,7 @@ namespace GOF23._16责任链模式
                 };
                 #endregion
 
-                #region 审批流程配置，可以根据数据库或配置文件动态配置审批流程节点(C#内存分配机制-》类型嵌套)
+                #region 审批流程配置，可以根据数据库或配置文件动态配置审批流程节点(C#内存分配机制-》类型嵌套 | 依赖抽象，而不依赖具体)
                 pm.SetNext(charge);//项目经理的下一审批环节是主管
                 charge.SetNext(manager);//主管的下一审批环节是总经理
                 manager.SetNext(chif);//总经理的下一审批环节是总监
