@@ -143,23 +143,23 @@ namespace GOF23._06原型模式
 
                 }
 
-                Console.WriteLine("*******************深拷贝*******************");
-                {
-                    StudentPrototype studentPrototype1 = StudentPrototype.GetInstanceSerializ();
-                    StudentPrototype studentPrototype2 = StudentPrototype.GetInstanceSerializ();
-                    studentPrototype1.Id = 111;
-                    studentPrototype1.Name = "修改名称111";
-                    studentPrototype1.book.BookId = 111;
-                    studentPrototype1.book.BookName = "book111";
+                //Console.WriteLine("*******************深拷贝*******************");
+                //{
+                //    StudentPrototype studentPrototype1 = StudentPrototype.GetInstanceSerializ();
+                //    StudentPrototype studentPrototype2 = StudentPrototype.GetInstanceSerializ();
+                //    studentPrototype1.Id = 111;
+                //    studentPrototype1.Name = "修改名称111";
+                //    studentPrototype1.book.BookId = 111;
+                //    studentPrototype1.book.BookName = "book111";
 
-                    studentPrototype2.Id = 222;
-                    studentPrototype2.Name = "修改名称222";
-                    studentPrototype2.book.BookId = 222;
-                    studentPrototype2.book.BookName = "book222";
+                //    studentPrototype2.Id = 222;
+                //    studentPrototype2.Name = "修改名称222";
+                //    studentPrototype2.book.BookId = 222;
+                //    studentPrototype2.book.BookName = "book222";
 
-                    studentPrototype1.Study();
-                    studentPrototype2.Study();
-                }
+                //    studentPrototype1.Study();
+                //    studentPrototype2.Study();
+                //}
 
             }
             catch (Exception ex)

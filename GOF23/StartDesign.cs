@@ -51,8 +51,8 @@ namespace GOF23
 
             #region 6、原型模式
             ////通过clone方式创建对象
-            //OpentDesign design = new GOF23._06原型模式.Program();
-            //design.Open();
+            OpentDesign design = new GOF23._06原型模式.Program();
+            design.Open();
             #endregion
 
             #endregion
@@ -82,8 +82,8 @@ namespace GOF23
 
             #region 10、装饰器模式
             ////在运行的过程中不断的去增加功能
-            OpentDesign design = new GOF23._10装饰器模式.Program();
-            design.Open();
+            //OpentDesign design = new GOF23._10装饰器模式.Program();
+            //design.Open();
             #endregion
 
             #region 11、外观模式(门面模式)

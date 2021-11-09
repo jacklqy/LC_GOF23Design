@@ -49,7 +49,8 @@ namespace GOF23._09组合模式
         }
 
         /// <summary>
-        /// 构造树形结构
+        /// 构造树形结构-》类型嵌套
+        /// 组合模式、装饰器模式、责任链模式、中介者模式-》很相似
         /// </summary>
         /// <returns></returns>
         private static Domain BuildTree()

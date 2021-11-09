@@ -186,7 +186,7 @@ namespace GOF23._16责任链模式
                 chif.SetNext(ceo);//总监的下一审批环节是CEO 
                 #endregion
 
-                //开始发起审批，流程可以任意配置
+                //开始发起审批，流程可以任意配置--》组合模式、装饰器模式、责任链模式、中介者模式-》很相似
                 pm.Audit(context);
             }
 

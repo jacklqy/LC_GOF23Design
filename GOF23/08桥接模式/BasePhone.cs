@@ -13,6 +13,8 @@ namespace GOF23._08桥接模式
         /// 价格
         /// </summary>
         public decimal price { get; set; }
+
+        #region 封装变化-》通过抽象方式注入
         /// <summary>
         /// 操作系统
         /// </summary>
@@ -22,7 +24,9 @@ namespace GOF23._08桥接模式
         /// 系统版本
         /// </summary>
         /// <returns></returns>
-        public abstract string Version();
+        public abstract string Version(); 
+        #endregion
+
         /// <summary>
         /// 打电话
         /// </summary>
