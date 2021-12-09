@@ -78,6 +78,7 @@ namespace GOF23._10装饰器模式
 
                 //俄罗斯套娃,C#内存分配机制,把引用类型变量的引用换个地址  --》和递归调用和相似-》类型嵌套
 
+                //要结合递归思想和引用类型地址的指向去理解
                 student = new BaseDecorator(student);//这里可以注释掉 --》组合模式、装饰器模式、责任链模式、中介者模式-》很相似
 
                 student = new StudentDecoratorAnswer(student);//课后，和放置顺序有关

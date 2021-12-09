@@ -57,31 +57,31 @@ namespace GOF23._24访问者模式
                 {
                     //1 只有代码没有视频
                     Console.WriteLine("******************VisitorPast*****************");
-                    VisitorAbstract visitor3 = new VisitorPast();
+                    VisitorAbstract visitor3 = new VisitorPast();//封装变化
                     foreach (var student in studentList)
                     {
                         student.Study();
-                        student.GetVideoVisitor(visitor3);
+                        student.GetVideoVisitor(visitor3);//对象与行为分离
                     }
                 }
                 {
                     //2 根据暗号获取当次课的视频
                     Console.WriteLine("******************VisitorTemp*****************");
-                    VisitorAbstract visitor2 = new VisitorTemp();
+                    VisitorAbstract visitor2 = new VisitorTemp();//封装变化
                     foreach (var student in studentList)
                     {
                         student.Study();
-                        student.GetVideoVisitor(visitor2);
+                        student.GetVideoVisitor(visitor2);//对象与行为分离
                     }
                 }
                 {
                     //3 找助教获取当次课的视频
                     Console.WriteLine("******************VisitorCurrent*****************");
-                    VisitorAbstract visitor1 = new VisitorCurrent();
+                    VisitorAbstract visitor1 = new VisitorCurrent();//封装变化
                     foreach (var student in studentList)
                     {
                         student.Study();
-                        student.GetVideoVisitor(visitor1);
+                        student.GetVideoVisitor(visitor1);//对象与行为分离
                     }
                 }
 

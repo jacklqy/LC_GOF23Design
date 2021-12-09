@@ -4,6 +4,17 @@ using System.Text;
 
 namespace GOF23._18迭代器模式
 {
+    //-------------------------知识点同步------------------------
+    //yield return：
+    //第一种方法，是把结果集全部加载到内存中再遍历；第二种方法，客户端每调用一次，yield return就返回一个值给客户端，是"按需供给"。
+    //第一种方法，客户端调用过程大致为：
+    //使用yield return，客户端调用过程大致为：
+    //使用yield return为什么能保证每次循环遍历的时候从前一次停止的地方开始执行呢？
+    //--因为，编译器会生成一个状态机来维护迭代器的状态。
+    //简单地说，当希望获取一个IEnumerable<T> 类型的集合，而不想把数据一次性加载到内存，就可以考虑使用yield return实现"按需供给"。
+
+    //goto case/goto
+    //-------------------------知识点同步------------------------
     public class YieldShow
     {
         public IEnumerable<int> CreateEnumerable()

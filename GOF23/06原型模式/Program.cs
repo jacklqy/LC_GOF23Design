@@ -107,6 +107,14 @@ namespace GOF23._06原型模式
                     studentPrototype2.Study();
                     studentPrototype3.Study();
 
+                    Console.WriteLine("------------------------");
+                    Console.WriteLine(object.ReferenceEquals(studentPrototype1, studentPrototype2));//false  MemberwiseClone是内存级别浅拷贝一个新内存地址
+                    Console.WriteLine(object.ReferenceEquals(studentPrototype1, studentPrototype3));//false  MemberwiseClone是内存级别浅拷贝一个新内存地址
+                    Console.WriteLine("------------------------");
+
+                    var ddd = studentPrototype1;
+                    Console.WriteLine(object.ReferenceEquals(ddd, studentPrototype1));//true
+
                     ///输出结果BookId 222/222/333  C#内存分配
                     ///StudentPrototype.Study被调用啦.Id = 111 Name = 修改名称111 BookId = 222 BookName = book222
                     ///StudentPrototype.Study被调用啦.Id = 222 Name = 修改名称222 BookId = 222 BookName = book222

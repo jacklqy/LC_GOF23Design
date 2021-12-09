@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace GOF23._22状态模式
 {
@@ -59,6 +61,9 @@ namespace GOF23._22状态模式
                 light.Show();
                 light.Turn();
             }
+
+
+
             Console.WriteLine("**************************************");
             {
                 LightBase light = new LightGreen();
@@ -74,6 +79,21 @@ namespace GOF23._22状态模式
                 context.Turn();
                 context.Show();
                 context.Turn();
+            }
+            Console.WriteLine("*****************************************");
+            Console.WriteLine("*****************************************");
+            {
+                LightBase light = new LightGreen();
+                Context context = new Context()
+                {
+                    CurrentLight = light
+                };
+                while (true)
+                {
+                    context.Show();
+                    Thread.Sleep(3000);
+                    context.Turn();
+                }
             }
         }
     }

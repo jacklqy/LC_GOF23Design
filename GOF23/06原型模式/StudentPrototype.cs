@@ -52,7 +52,8 @@ namespace GOF23._06原型模式
         /// <returns></returns>
         public static StudentPrototype GetInstance()
         {
-            //MemberwiseClone：内存拷贝，不走构造函数，直接内存copy，所以没有性能损失。而且产生的是一个全新的对象
+            //MemberwiseClone：内存拷贝，不走构造函数，直接内存copy，所以没有性能损失。而且产生的是一个全新的对象,
+            //然后将原有对象的所有字段直接复制过去，无论是值类型还是引用类型，是值类型的就复制值类型，是引用类型的就复制引用本身（而不会复制所引用的对象，只复制引用地址，特别需要注意引用对象嵌套问题），因此，是浅拷贝。
             //MemberwiseClone：浅拷贝，只拷贝引用
             StudentPrototype student = (StudentPrototype)_StudentSingleton.MemberwiseClone();
 
