@@ -74,7 +74,7 @@ namespace GOF23._06原型模式
         /// <returns></returns>
         public static StudentPrototype GetInstanceSerializ()
         {
-            return SerializeHelper.DeepClone<StudentPrototype>(_StudentSingleton);
+            return SerializeHelper.DeepClone<StudentPrototype>(_StudentSingleton); //return _StudentSingleton.Adapt<StudentPrototype>();//需引入三方库Mapster
         }
 
         public void Study()
